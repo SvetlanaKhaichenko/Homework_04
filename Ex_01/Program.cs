@@ -13,13 +13,17 @@ int res(int x, int y)
     return result;
 
 }
+
+string[] mass(string x)
+{
+    x = x.Replace(" ", "");
+    string[] mas = x.Split(",");
+    return mas;
+}
+
 System.Console.WriteLine("Введите числа через запятую");
-string first = Console.ReadLine();
-first = first.Replace(" ", "");
-string[] mas = first.Split(",");
-string a = mas[0];
-string b = mas[1];
-int a1 = Convert.ToInt32(a);
-int b2 = Convert.ToInt32(b);
+string [] prom =  mass (Console.ReadLine());
+int a1 = Convert.ToInt32(prom[0]);
+int b2 = Convert.ToInt32(prom[1]);
 
 System.Console.WriteLine(res(a1, b2));
