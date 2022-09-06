@@ -2,7 +2,7 @@
 // 3 -> 1 1 0
 // 1 0 0
 // 0 0 1
-int[,] RandomMas(int extent)
+int[,] RandomMas(int extent) //Создание рандомного массива по заданному числу строк и столбцов 
 {
     int[,] Mas = new int[extent, extent];
     for (int i = 0; i < Mas.GetLength(0); i++)
@@ -16,7 +16,7 @@ int[,] RandomMas(int extent)
     return Mas;
 }
 
-void PrintMas(int[,] Mas)
+void PrintMas(int[,] Mas) //печать массива
 {
     for (int i = 0; i < Mas.GetLength(0); i++)
     {
